@@ -5,11 +5,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Aleksa Marjanovic</title>
     <style>
+        
         a:hover {
-            background-color: purple;
+            background-color: white;
         }
         .pozadina{
-            background-color: yellow;
+            background-color: grey;
         }
         .oblik{
             border-radius: 10%;
@@ -17,14 +18,16 @@
         .oblik2{
             border-radius: 50%;
         }
-        .slika{
-            width: 400px;
-            border-radius: 50%;
+        h1{
+            color: black;
+        }
+        .boja{
+            color: white;
         }
     </style>
 </head>
-<body style="background-color: rgb(233, 233, 15);">
-    <nav class="navbar navbar-expand-lg pozadina">
+<body style="background-color: rgb(121, 116, 116);">
+    <nav class="navbar navbar-expand-lg pozadina fixed-top">
         <div "container-fluid">
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav oblik">
@@ -33,35 +36,35 @@
                     <a href="#postignuca" class="nav-item nav-link oblik">Postignuća</a>
                     <a href="#interesovanja" class="nav-item nav-link oblik">Interesovanja</a>
                     <a href="#aspiracije" class="nav-item nav-link oblik">Aspiracije</a>
+                    <a href="#kontakt" class="nav-item nav-link oblik">Kontakt</a>
                 </div>
             </div>
         </div>
     </nav>
-
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="col-sm-3">
-                <h1 id="profil">Profil</h1>
-                <img src="c:\Users\Korisnik\Pictures\IMG_20200914_161549.jpg" alt="Ja" width="300" height="300" align="right">
-                <h>Zdravo, moje ime je Aleksa Marjanović.</h>
-            </div>
+    
+    <div class="h1 text-center bg-info"></div>
+    <div class="row">
+        <h1 id="profil" class="text-center">Profil</h1>
+        <h1 id="profil" class="text-center">Profil</h1>
+        <div class="col text-end p-2">Zdravo, ja sam Aleksa Marjanovic. Učenik sam Prve kragujevačke gimnazije.Ovo je moj portfolio!</div>
+        <div class="col">
+            <img src="c:\Users\Korisnik\Pictures\IMG_20200914_161549.jpg" alt="Ja" width="300" height="300" class="rounded gloat-start">
         </div>
+    </div>
+
+    <div class="h1 text-center bg-info"></div>
+    <div class="row">
+        <h1 id="postignuca" class="text-center p-3">Postignuća</h1>
+        <div style="background-color:rgb(82, 79, 79);" class="col text-center p-5 boja">Pre 5 godina, sam učestvovao na turniru regiona u košarci.</div>
+        <div style="background-color: rgb(58, 55, 55);" class="col text-center p-5 boja">Bio sam član idealne petorke, nakon prvog kola.</div>
+        <div style="background-color: rgb(82, 79, 79);" class="col text-center p-5 boja">Upisao sam Prvu kragujevačku gimnaziju!</div>
     </div>
 
     <div class="container">
         <div class="row d-flex justify-content-center">
-            <div class="col-sm-3">
-                <h1 id="postignuca">Postignuća</h1>
-                <h>Zdravo!</h>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="col-sm-3">
+            <div class="col text-center p-3">
                 <h1 id="interesovanja">Interesovanja</h1>
-                <h>Zdravo!</h>
+                <h>U slobodno vreme igram i pratim sport. Takodje volim i rad na računaru.</h>
             </div>
         </div>
     </div>
@@ -69,10 +72,32 @@
     <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-sm-3">
-                <h1 id="aspiracije">Aspiracije</h1>
-                <h>Zdravo!</h>
+                <h1 class="text-center p-3" id="aspiracije">Aspiracije</h1>
+                <ul>
+                    <li>Napredak u programiranju</li>
+                    <li>Usavršavanje jezika</li>
+                  </ul>
             </div>
         </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center p-3">
+            <div class="col-md-8">
+                <form class="card" style="width: auto; background-color: rgba(90, 86, 86, 0.507);">
+                    <div class="form-group">
+                        <h1 id="kontakt">Kontakt</h1>
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group p-2">
+                      <label for="exampleInputPassword1">Poruka</label>
+                      <input type="poruka" class="form-control" id="exampleInputPassword1" placeholder="Poruka">
+                    </div>
+                    <button type="submit" class="btn btn-primary " >Submit</button>
+                  </form>
+            </div>
+         </div>
     </div>
 </body>
 </html>
