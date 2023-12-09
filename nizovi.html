@@ -3,10 +3,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .naslov{
+            text-align: center;
+            color: gray;
+            font-size: x-large;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(231, 222, 222);">
+    <p class="naslov">KOMENTARI</p>
+    
+    <input class="okvir" id="searchbar" oninput="pretragaKomentara()" type="text" placeholder="Pretraga">
+
+    <ul id="comment-list">
+    </ul>
+
+    <ulid="rezultat" style="background-color: rgb(216, 213, 213);"></ul>
     <script src="komentari.js"></script>
     <script src="nizovi.js"></script>
-    <input type="text" placeholder="Search..">
-</head>
-<body onload="PrikaziKomentare(komentari)">
 </body>
 </html>
+
